@@ -15,7 +15,7 @@ var bucketParams = {
     Bucket : "user-images-" + uuidv4(),
 };
 
-// call s3 to create bucket using callback fx
+// call s3 to create s3 bucket using callback fx
 s3.createBucket(bucketParams, (err, data) => {
     if (err) {
         console.log("Error", err);
